@@ -1,20 +1,31 @@
 .header {
   display: flex;
+  justify-content: space-between;
 }
 
 //---------------------------------------Главная навигация----------------------------------
 .main-nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  display: none;
 }
 
 .header__logo {
-  margin-right: 93px;
-  padding: 24px 0 25px 0;
+  // margin-right: 93px;
+  padding: 16px 0;
+}
+.header-btn__close {
+  padding: 0;
+  background-color: getColor('primary-white-color');
+  border: none;
+  &:hover .header-btn__icon,
+  &:focus .header-btn__icon {
+    fill: getColor('accent-color');
+  }
 }
 
 .site-nav {
-  display: flex;
+  // display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -55,9 +66,10 @@
 //------------------------------------------ Контакты в главном меню -------------------------------//
 
 .contact-nav {
-  display: flex;
+  // display: flex;
   align-items: center;
   margin-left: auto;
+  display: none;
 }
 
 .contact-nav__item:not(:last-child) {
@@ -71,7 +83,7 @@
 
 .contact-nav__link {
   align-items: center;
-  display: flex;
+  // display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: getColor('primary-text-color');
