@@ -1,0 +1,10 @@
+.logo {
+  @extend %logo-font;
+}
+.logo__second-part--colo-black {
+  color: getColor('logo-second-part');
+}
+
+.logo__second-part--colo-white {
+  color: getColor('primary-white-color');
+}

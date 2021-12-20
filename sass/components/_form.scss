@@ -1,0 +1,45 @@
+.footer-form__label {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor('primary-white-color');
+  margin-bottom: 20px;
+}
+
+.footer-form__input {
+  margin: 0;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  color: getColor('primary-white-color');
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form__button {
+  position: relative;
+  padding: 10px 62px 10px 29px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-left: 12px;
+}
+
+.footer-form__icon-button {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}

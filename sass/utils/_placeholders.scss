@@ -1,0 +1,30 @@
+%centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%logo-font {
+  color: getColor('accent-color');
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+%section-subtitle-font {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+%section-title-font {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor('title-text-color');
+}

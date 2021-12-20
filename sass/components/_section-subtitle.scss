@@ -1,0 +1,11 @@
+.section-subtitle {
+  @extend %section-subtitle-font;
+}
+
+.section-subtitle--color-white {
+  color: getColor('primary-white-color');
+}
+
+.section-subtitle--color-black {
+  color: getColor('title-text-color');
+}
