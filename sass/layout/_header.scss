@@ -1,31 +1,51 @@
 .header {
+  outline: 1px solid green;
   display: flex;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 //---------------------------------------Главная навигация----------------------------------
 .main-nav {
-  // display: flex;
-  // align-items: center;
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .header__logo {
-  // margin-right: 93px;
   padding: 16px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0;
+    margin-right: 93px;
+  }
 }
 .header-btn__close {
-  padding: 0;
+  padding: 22px 0;
   background-color: getColor('primary-white-color');
   border: none;
   &:hover .header-btn__icon,
   &:focus .header-btn__icon {
     fill: getColor('accent-color');
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header-btn__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav {
-  // display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -50,6 +70,10 @@
   &__link.current {
     color: getColor('accent-color');
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .site-nav__link--current::after {
@@ -66,36 +90,60 @@
 //------------------------------------------ Контакты в главном меню -------------------------------//
 
 .contact-nav {
-  // display: flex;
-  align-items: center;
-  margin-left: auto;
+  margin-left: 84px;
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.contact-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-nav__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+
   fill: currentColor;
 }
 
 .contact-nav__link {
-  align-items: center;
-  // display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: getColor('primary-text-color');
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: getColor('accent-color');
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    display: flex;
   }
 }
 

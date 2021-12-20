@@ -1,5 +1,8 @@
 .logo {
   @extend %logo-font;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 .logo__second-part--colo-black {
   color: getColor('logo-second-part');
