@@ -118,8 +118,28 @@
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
   }
+  @media screen and (max-width: 1199px) {
+    // padding: 1px;
+  }
 
   fill: currentColor;
+}
+.contact-nav__icon--phone {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.contact-nav__icon--mail {
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .contact-nav__link {

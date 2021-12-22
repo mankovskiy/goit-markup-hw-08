@@ -1,6 +1,8 @@
 .footer {
-  text-align: center;
   background-color: getColor('primary-bcg-color');
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__wrapper {
