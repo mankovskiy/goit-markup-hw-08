@@ -6,20 +6,24 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
   margin: 0 auto;
   text-align: center;
   background-color: getColor('primary-bcg-color');
+  @media screen and(min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
   &__title {
-    // width: 360px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
     color: getColor('primary-white-color');
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
-    line-height: 1.36;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -59,6 +63,7 @@
 .hero__title {
   @media screen and(min-width:1200px) {
     font-size: 44px;
-    width: 696px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }

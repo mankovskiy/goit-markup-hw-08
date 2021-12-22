@@ -314,6 +314,85 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.header-mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+  .header-mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu-close {
+  border: none;
+  background-color: #ffffff;
+}
+
+.header-mob-menu__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.header-mob-menu__link.current {
+  color: #2196f3;
+}
+
+.contact-mob__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.contact-mob__link--accent-color {
+  color: #2196f3;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mob-socials-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mob-socials-list__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  margin-left: 10px;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mob-socials-list {
+  position: relative;
+  display: flex;
+}
+
+.mob-socials-list__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 .button {
   color: #ffffff;
   background-color: #2196f3;
@@ -336,21 +415,29 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
   margin: 0 auto;
   text-align: center;
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
+}
+
 .hero__title {
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   color: #ffffff;
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.36;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -389,7 +476,8 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
-    width: 696px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }
 
