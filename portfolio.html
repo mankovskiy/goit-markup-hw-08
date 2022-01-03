@@ -24,20 +24,74 @@
         <a href="./index.html" class="logo header__logo">
           Web<span class="logo__second-part logo__second-part--colo-black">Studio</span>
         </a>
-        <button type="button" class="header-btn__close">
+        <button type="button" class="header-btn__open js-open-menu">
           <svg class="header-btn__icon" width="24px" height="16px">
             <use href="./images/symbol-defs.svg#icon-header-menu-24px"></use>
           </svg>
         </button>
+
+        <!-- <div class="header-mob-menu js-menu-container">
+          <div class="header-mob-menu__container">
+            <div class="wrapper-mob-top">
+              <button type="button" class="mob-menu-close">
+                <svg class="mob-menu-close__icon" width="19px" height="19px">
+                  <use href="./images/symbol-defs.svg#icon-close-mob"></use>
+                </svg>
+              </button>
+
+              <ul class="header-mob-menu__list list">
+                <li class="header-mob-menu__item">
+                  <a href="./index.html" class="header-mob-menu__link current">Студия</a>
+                </li>
+                <li class="header-mob-menu__item">
+                  <a href="./portfolio.html" class="header-mob-menu__link">Портфолио</a>
+                </li>
+                <li class="header-mob-menu__item">
+                  <a href="" class="header-mob-menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="wrapper-mob-bottom">
+              <ul class="contact-mob list">
+                <li class="contact-mob__item">
+                  <a
+                    href="mailto:info@devstudio.com "
+                    class="contact-mob__link contact-mob__link--accent-color"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contact-mob__item">
+                  <a href="tel:+380961111111" class="contact-mob__link"> +38 096 111 11 11 </a>
+                </li>
+              </ul>
+
+              <ul class="mob-socials-list list">
+                <li class="mob-socials-list__item">
+                  <a href="" class="mob-socials-list__link link">Instagram</a>
+                </li>
+                <li class="mob-socials-list__item">
+                  <a href="" class="mob-socials-list__link link">Twitter</a>
+                </li>
+                <li class="mob-socials-list__item">
+                  <a href="" class="mob-socials-list__link link">Facebook</a>
+                </li>
+                <li class="mob-socials-list__item">
+                  <a href="" class="mob-socials-list__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
         <nav class="main-nav">
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+              <a href="./index.html" class="site-nav__link current site-nav__link--current"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
@@ -49,7 +103,7 @@
         <ul class="contact-nav list">
           <li class="contact-nav__item">
             <a href="mailto:info@devstudio.com " class="contact-nav__link">
-              <svg class="contact-nav__icon" width="16" height="12">
+              <svg class="contact-nav__icon contact-nav__icon--mail">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
@@ -57,7 +111,7 @@
           </li>
           <li class="contact-nav__item">
             <a href="tel:+380961111111" class="contact-nav__link"
-              ><svg class="contact-nav__icon" width="10" height="16">
+              ><svg class="contact-nav__icon contact-nav__icon--phone">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -70,7 +124,7 @@
       <section class="section-portfolio">
         <h2 class="visually-hidden">Наши работы</h2>
         <div class="container">
-          <ul class="portfolio-button list">
+          <ul class="portfolio-button__list list">
             <li class="portfolio-button__item">
               <button class="portfolio-button__btn" type="button">Все</button>
             </li>
@@ -93,7 +147,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image1.jpg"
                     alt="ноутбук с персоналом на экране"
                     width="370"
@@ -116,7 +170,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image2.jpg"
                     alt="два баскетболиста с мячём"
                     width="370"
@@ -139,7 +193,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image3.jpg"
                     alt="логотип ресторана "
                     width="370"
@@ -162,7 +216,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image4.jpg"
                     alt="наушники"
                     width="370"
@@ -185,7 +239,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image5.jpg"
                     alt="две картонные коробки"
                     width="370"
@@ -208,7 +262,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image6.jpg"
                     alt="монитор"
                     width="370"
@@ -231,7 +285,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image7.jpg"
                     alt="открытая книга"
                     width="370"
@@ -254,7 +308,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image8.jpg"
                     alt="этикетка с лэйблом"
                     width="370"
@@ -277,7 +331,7 @@
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-list__thumb">
                   <img
-                    class="no-grap"
+                    class="portfolio-list__img"
                     src="./images/portfolio-image/portfolio-image9.jpg"
                     alt="мужчина работает на ноутбуке"
                     width="370"
@@ -300,7 +354,7 @@
       </section>
     </main>
     <!-- Подвал -->
-    <
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -309,7 +363,7 @@
               <a href="./index.html" class="logo footer__logo"
                 >Web<span class="logo__second-part logo__second-part--colo-white">Studio</span></a
               >
-              <address>
+              <address class="address-wrap">
                 <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="address__list list">
                   <li class="address__item">
@@ -357,7 +411,7 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="footer-form-field"> -->
+
           <form class="footer-form">
             <label for="mail-footer" class="footer-form__label">Подпишитесь на рассылку</label>
             <input type="email" id="mail-footer" class="footer-form__input" placeholder="E-mail" />
@@ -368,7 +422,6 @@
               </svg>
             </button>
           </form>
-          <!-- </div> -->
         </div>
       </div>
     </footer>
