@@ -808,8 +808,8 @@ img {
 @media screen and (max-width: 1199px) {
   .section-clients__label-list {
     flex-wrap: wrap;
-    margin-right: calc(-1 * 30px);
-    margin-bottom: calc(-1 * 30px);
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -827,7 +827,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .label-list__item {
-    flex-basis: calc(100% / 2 - 30px);
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
