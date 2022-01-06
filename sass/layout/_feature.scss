@@ -16,8 +16,8 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
-    margin-right: calc(-1 * 30px);
-    margin-bottom: calc(-1 * 30px);
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 .feature__wrap-icon {
@@ -41,8 +41,8 @@
 
 .feature__item {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
 
     flex-basis: calc(100% / 2 - 30px);
   }

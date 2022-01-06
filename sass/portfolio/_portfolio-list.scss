@@ -1,5 +1,5 @@
 .portfolio-list {
-  margin-top: 40px;
+  // margin-top: 40px;
   &__link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,24 +32,24 @@
 
 @media screen and (min-width: 768px) {
   .portfolio-list {
-    margin-top: 30px;
+    // margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: calc(-1 * 30px);
-    margin-right: calc(-1 * 30px);
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-list {
-    margin-top: 34px;
+    // margin-top: 34px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-list__item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
